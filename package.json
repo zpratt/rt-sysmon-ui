@@ -1,0 +1,25 @@
+{
+  "name": "rt-sysmon-ui",
+  "version": "1.0.0",
+  "description": "Real-time system monitor UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zpratt/rt-sysmon-ui.git"
+  },
+  "author": "zach pratt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zpratt/rt-sysmon-ui/issues"
+  },
+  "homepage": "https://github.com/zpratt/rt-sysmon-ui",
+  "dependencies": {
+    "socket.io-client": "^1.2.1"
+  },
+  "devDependencies": {
+    "browserify": "^6.3.3"
+  }
+}
