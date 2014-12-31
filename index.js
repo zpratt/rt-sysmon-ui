@@ -9,15 +9,20 @@
         URL = 'http://localhost:8080',
         socket = io(URL);
 
-    var el = React.createElement(CpuDisplay, {name: "World"});
+    function init() {
+        var rendered = React.render(
+            React.createElement(CpuDisplay, {title: "Total User Time"}),
+            document.body
+        );
 
-    var rendered = React.render(el, document.body);
-
-    socket.on('cpu_update', function (data) {
-        rendered.setState({
-            load: data.totalUserTime
+        socket.on('cpu_update', function (data) {
+            rendered.setState({
+                load: data.totalUserTime
+            });
         });
-    });
 
-    window.rendered = rendered;
+        window.rendered = rendered;
+    }
+
+    init();
 }());
