@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/zpratt/rt-sysmon-ui",
   "dependencies": {
+    "ampersand-model": "^4.0.3",
+    "d3": "^3.5.3",
     "react": "^0.12.2",
     "socket.io-client": "^1.2.1"
   },
