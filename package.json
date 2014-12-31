@@ -4,7 +4,7 @@
   "description": "Real-time system monitor UI",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node_modules/.bin/browserify index.js > examples/app.js && httpserver 8081"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/zpratt/rt-sysmon-ui",
   "dependencies": {
+    "react": "^0.12.2",
     "socket.io-client": "^1.2.1"
   },
   "devDependencies": {
